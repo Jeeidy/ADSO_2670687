@@ -103,6 +103,25 @@
                     <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required=""> <br><br>
                     <label for="Email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Escriba su Email" required=""> <br><br>
+
+                    <label for="Contraseña">Contraseña</label>
+                    <input type="password" pattern="*{8,}" placeholder="*********" required=""> <br><br>
+
+                    <label for="Fecha">Fecha
+                        <input type="date" id="start" name="trip-start" placeholder="Escriba la fecha" required=""> <br><br>
+                    </label>
+
+                    <label for="Números">Números</label>
+                    <input type="number" name="números" id="números" min="1" max="10" placeholder="Escriba su número" required=""><br><br>
+
+                    <label for="Telefono">Telefono</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Escriba su número telefonico" required=""><br><br>
+
+                    <p>Genero: 
+                            <input type="radio" name="hm" value="h"> Hombre
+                            <input type="radio" name="hm" value="m"> Mujer
+                    </p>
+                    
                     <input type="submit">
                     <button value="Registrar">Registrar</button>
                  </form>
