@@ -3,19 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Iniciando con GIT</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
         <body>
             
-            <h1>Concepto de GIT</h1>
-            <h2>Concepto de GIT</h2>
-            <h3>Concepto de GIT</h3>
-            <h4>Concepto de GIT</h4>
-            <h5>Concepto de GIT</h5>
-            <h6>Concepto de GIT</h6>
+            <h1 id="t1">Concepto de GIT</h1>
 
-            <p> Git es un sistema de control de versiones. Lleva un registro de todos los cambios y avances de tu proyecto. Además, ayuda almacenar proyectos en la nube. De igual manera, ayuda a que varias personas trabajen en un mismo proyecto y pueden realizar modificaciones sin afectar a los demás archivos. Una vez que estén listos los cambios se fusionan con la rama principal.</p>
+            <p class="p1"> Git es un sistema de control de versiones. Lleva un registro de todos los cambios y avances de tu proyecto. Además, ayuda almacenar proyectos en la nube. De igual manera, ayuda a que varias personas trabajen en un mismo proyecto y pueden realizar modificaciones sin afectar a los demás archivos. Una vez que estén listos los cambios se fusionan con la rama principal.</p>
 
-            <h2>PRINCIPALES COMANDOS DE GIT</h2>
+            <h2 class="pcg">PRINCIPALES COMANDOS DE GIT</h2>
             <ul>
                 <li><strong>GIT INIT:</strong>Este comando funciona para iniciar un proyecto con git.</li>
                 <li><strong>GIT CONFIG --GLOBAL USER.NAME:</strong>Para ver el nombre del usuario</li>
@@ -114,16 +110,45 @@
                     <label for="Números">Números</label>
                     <input type="number" name="números" id="números" min="1" max="10" placeholder="Escriba su número" required=""><br><br>
 
+                    <label for="">Rangos</label>
+                    <input type="range" min="5" max="10"> <br><br>
+
                     <label for="Telefono">Telefono</label>
                     <input type="tel" id="tel" name="tel" placeholder="Escriba su número telefonico" required=""><br><br>
+
+                    <label for="">Selección Múltiple</label> <br><br>
+                    <input type="radio" name="Fútbol" value="1"Fútbol>Fútbol <br><br>
+                    <input type="radio" name="Bicicleta" value="2"Bicicleta> Bicicleta<br><br>
+                    <input type="radio" name="Natación" value="3"Natación> Natación<br><br>
 
                     <p>Genero: 
                             <input type="radio" name="hm" value="h"> Hombre
                             <input type="radio" name="hm" value="m"> Mujer
                     </p>
                     
+                    <form action="#">
+                        <label for="lang">Lenguaje</label>
+                        <select name="lenguajes" id="lang">
+                            <option value="selecciona">Selecciona un despliegue de opciones</option>
+                            <option value="opción 1">Opción 1</option>
+                            <option value="opción 2">Opción 2</option>
+                            <option value="opción 3">Opción 3</option>
+                            <option value="opción 4">Opción 4</option>
+                            <option value="opción 5">Opción 5</option>
+                            <option value="opción 6">Opción 6</option>
+                        </select>
+                    </form> <br><br>
+
+                    <input type="file" name="file" id="file" accept="image/*" multiple> <br><br>
+
                     <input type="submit">
                     <button value="Registrar">Registrar</button>
                  </form>
+
+                    <h2>ETIQUETAS MULTIMEDIA</h2>
+                    <video src="../HTML/videos/promo.mp4" width="640" height="480" controls></video>
+                    
+                    <h3>Audio</h3>
+                    <audio src="audios/himno.mp3" controls></audio>
         </body>
 </html> 
