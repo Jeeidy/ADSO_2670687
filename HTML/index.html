@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Iniciando con GIT</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+        <body>
+            
+            <h1 id="t1">Concepto de GIT</h1>
+
+            <p class="p1"> Git es un sistema de control de versiones. Lleva un registro de todos los cambios y avances de tu proyecto. Además, ayuda almacenar proyectos en la nube. De igual manera, ayuda a que varias personas trabajen en un mismo proyecto y pueden realizar modificaciones sin afectar a los demás archivos. Una vez que estén listos los cambios se fusionan con la rama principal.</p>
+
+            <h2 class="pcg">PRINCIPALES COMANDOS DE GIT</h2>
+            <ul>
+                <li><strong>GIT INIT:</strong>Este comando funciona para iniciar un proyecto con git.</li>
+                <li><strong>GIT CONFIG --GLOBAL USER.NAME:</strong>Para ver el nombre del usuario</li>
+                <li><strong>GIT CONFIG --GLOBAL USER.EMAIL:</strong>Para ver el correo del usuario</li>
+                <li><strong>GIT ADD:</strong>Permite agregar cambios al área de reparación.</li>
+                <li><strong>GIT STATUS:</strong>Muestra el estado del directorio de trabajo y del área del entorno de ensayo.</li>
+                <li><strong>GIT COMMIT -M:</strong>Registra instantaneas de archivo de forma permanente en el historial de versión.</li>
+                <li><strong>GIT LOG:</strong>Se utiliza para listar el historial de versiones de la rama actual.</li>
+                <li><strong>GIT BRANCH:</strong>Para mirar la rama.</li>
+                <li><strong>GIT CHECKOUT MAIN:</strong>Es la acción de moverse entre diferentes ramas.</li>
+                <li><strong>GIT CHECKOUT -B MAIN</strong>Permite cambiar el nombre de la rama</li>
+            </ul>
+
+            <h2>REPOSITORIOS REMOTOS EN GIT</h2>
+
+            <ol>
+                <li>
+                    <a href="contenido/github.html" target_blank">GITHUB</a>
+                </li>
+                    <li>
+                        <a href="../HTML/contenido/gitlab/gitlab.html" target="_blank">GITLAB</a>
+                    </li>
+                        <li>
+                            <a href="../HTML/contenido/gitlab/bitbucket/bitbucket.html" target="_blank">BITBUCKET</a>
+                        </li>
+            </ol>
+
+                <h2>HISTORIA DE USUARIO - Inicio de sesión o registrarse Airbnb</h2>
+                <table border="1">
+                    <tr>
+                        <th>ID Historia</th>
+                        <th>HU2</th>
+                    </tr>
+                            <tr>
+                                <th>Nombre</th>
+                                <td>Iniciar sesión o registro</td>
+                            </tr>
+                                <tr>
+                                    <th>Peso</th>
+                                    <td>4</td>
+                                </tr>
+                                    <tr>
+                                        <th>Requisito</th>
+                                        <td>RF1 - Iniciar sesión en Airbnb</td>
+                                    </tr>
+                                        <tr>
+                                            <th>Rol</th>
+                                            <td>Usuario</td>
+                                        </tr>
+                                            <tr>
+                                                <th>Funcionalidad</th>
+                                                <td>Inicio de sesión o registro en Airbnb</td>
+                                            </tr>
+                                                <tr>
+                                                    <th>Resultado</th>
+                                                    <td>Observar y alquilar alojamiento</td>
+                                                </tr>
+                                                    <tr>
+                                                        <th>Flujo Normal</th>
+                                                        <td>
+                                                            <ol>
+                                                                <li>Se realiza el proceso de registro, con número de teléfono o correo electrónico, facebook y apple.</li>
+                                                                <li>Generar un pin para el registro, que es enviado al SMS.</li>
+                                                                <li>Se muestran los resultados del registro, nombre ,apellido, fecha de nacimiento, correo electrónico.</li>
+                                                                <li>Si el usuario ya tiene cuenta, le aparecerá un cuadro emergente para iniciar sesión por google.</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                        <tr>
+                                                            <th>Criterios de aceptación</th>
+                                                            <td>
+                                                                <ol>
+                                                                    <li>Establecer la condición de escribir solo números en el campo de número de teléfono.</li>
+                                                                    <li>Establecer solamente seis dígitos para el código.</li>
+                                                                    <li> No realizar ninguna actividad con los campos vacíos.</li>
+                                                                    <li>En el campo de nombre y apellidos, permitir letras y números.</li>
+                                                                    <li>En el campo del correo electrónico, tener el carácter obligatorio “@”.</li>
+                                                                </ol>
+                                                            </td>
+                                                        </tr>
+                </table>
+                 <h2>FORMULARIO EN HTML5</h2>
+                 <form action="" method="">
+                    <label for="nombre">Digite Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required=""> <br><br>
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Escriba su Email" required=""> <br><br>
+
+                    <label for="Contraseña">Contraseña</label>
+                    <input type="password" pattern="*{8,}" placeholder="*********" required=""> <br><br>
+
+                    <label for="Fecha">Fecha
+                        <input type="date" id="start" name="trip-start" placeholder="Escriba la fecha" required=""> <br><br>
+                    </label>
+
+                    <label for="Números">Números</label>
+                    <input type="number" name="números" id="números" min="1" max="10" placeholder="Escriba su número" required=""><br><br>
+
+                    <label for="">Rangos</label>
+                    <input type="range" min="5" max="10"> <br><br>
+
+                    <label for="Telefono">Telefono</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Escriba su número telefonico" required=""><br><br>
+
+                    <label for="">Selección Múltiple</label> <br><br>
+                    <input type="radio" name="Fútbol" value="1"Fútbol>Fútbol <br><br>
+                    <input type="radio" name="Bicicleta" value="2"Bicicleta> Bicicleta<br><br>
+                    <input type="radio" name="Natación" value="3"Natación> Natación<br><br>
+
+                    <p>Genero: 
+                            <input type="radio" name="hm" value="h"> Hombre
+                            <input type="radio" name="hm" value="m"> Mujer
+                    </p>
+                    
+                    <form action="#">
+                        <label for="lang">Lenguaje</label>
+                        <select name="lenguajes" id="lang">
+                            <option value="selecciona">Selecciona un despliegue de opciones</option>
+                            <option value="opción 1">Opción 1</option>
+                            <option value="opción 2">Opción 2</option>
+                            <option value="opción 3">Opción 3</option>
+                            <option value="opción 4">Opción 4</option>
+                            <option value="opción 5">Opción 5</option>
+                            <option value="opción 6">Opción 6</option>
+                        </select>
+                    </form> <br><br>
+
+                    <input type="file" name="file" id="file" accept="image/*" multiple> <br><br>
+
+                    <input type="submit">
+                    <button value="Registrar">Registrar</button>
+                 </form>
+
+                    <h2>ETIQUETAS MULTIMEDIA</h2>
+                    <video src="../HTML/videos/promo.mp4" width="640" height="480" controls></video>
+                    
+                    <h3>Audio</h3>
+                    <audio src="audios/himno.mp3" controls></audio>
+        </body>
+</html> 
