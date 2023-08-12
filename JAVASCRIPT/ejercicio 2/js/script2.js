@@ -32,10 +32,10 @@ alert("El total de la compra es: "+tcomp);*/
 cuánto dinero ganara después de un mes si el banco paga a razón de 2%
 mensual. */
 
-let capi = prompt("Ingrse su capital");
+/*let capi = prompt("Ingrse su capital");
 const pganancia=2/100;
 const ganancia=parseInt(capi*pganancia);
-alert("La ganancia del capital invertido es: "+ganancia);
+alert("La ganancia del capital invertido es: "+ganancia);*/
 
 /*ACT 3:Un alumno desea saber cuál será su calificación final en la materia de
 Algoritmos. Dicha calificación se compone de los siguientes porcentajes: 
