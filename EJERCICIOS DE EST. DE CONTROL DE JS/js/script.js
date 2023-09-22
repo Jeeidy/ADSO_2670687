@@ -75,7 +75,7 @@ Día 7 Domingo
 
 Si se escribe otro número diferente debe salir el mensaje: ESCRIBIO UN NÚMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7*/
 
-let num=parseFloat (prompt("Ingrese un número para ver con que día corresponde"));
+/*let num=parseFloat (prompt("Ingrese un número para ver con que día corresponde"));
     switch (numero) {
         case 1:
             alert("Día 1 - Lunes");
@@ -101,14 +101,102 @@ let num=parseFloat (prompt("Ingrese un número para ver con que día corresponde
         default:
             alert("ESCRIBIO UN NÚMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7");
             break;
-    }
+    }*/
 
 /*EJERCICIO 7: En un almacen se hace un 20% de descuento a los clientes cuya compra supero los mil pesos, a los demás solo se les hace un 5% de descuento. ¿Cuál sera la cantidad que pagara una persona por su compra?*/
+
+var Total = parseFloat(prompt("Ingrese el precio total de su compra:"));
+
+var descuento;
+if (Total >=1000){
+    descuento = Total * 0.2; 
+}else{
+    descuento = Total * 0.05;
+}
+var pago = Total - descuento;
+alert ("La cantidad a pagar es: " + pago.toFixed(2) + " pesos.");
+
 /*EJERCICIO 8: Un obrero necesita calcular su salario semanal, el cual se obtiene de la siguiente manera:
 A Si trabaja 40 horas o menos se le paga $16.000 por hora
 B Si trabaja mas de 40 horas se le paga $20.000 por hora*/
+
+var horas = parseInt(prompt("Ingrese el número de horas trabajadas:"));
+
+var salario;
+if (horasTrabajadas <= 40) {
+    salario = horas * 16000;
+} else{
+    salario = horas * 20000;
+}
+    alert("Su salario semanal es de " + salario.toFixed(2) + " pesos ");
+
 /*EJERCICIO 9: Programa que lea los nombres y edades de dos personas e imprima cual de ellos tiene mas edad*/
+
+var nombre1 = prompt("Escriba el nombre de la primera persona:");
+var edad1 = parseInt(prompt("Escriba la edad de la primera persona"));
+
+var nombre2 = prompt("Escriba el nombre de la segunda persona:");
+var edad2 = parseInt(prompt("Escriba la edad de la segunda persona"));
+
+var mayor;
+    if (edad1 > edad2) {
+        mayor = nom1;
+    } else if (edad2 > edad1) {
+        mayor = nom2;
+    } else {
+        mayor = "Ambas personas tienen la misma edad";
+    }
+        alert("La persona mayor es: " + mayor);
+
+
 /*EJERCICIO 10: Hacer un programa que calcule el total a pagar por la compra de camisas. Si se compra 3 camisas o mas se aplica un descuento del 20% sobre el total de la compra y si son menos de 3 camisas un descuento dl 10%*/
+
+var cantidadCamisas = parseInt(prompt("Ingrese la cantidad de camisas compradas:"));
+var precioCamisa = parseFloat(prompt("Ingrese el precio de cada camisa:"));
+var TotalSinDescuento = cantidadCamisas * precioCamisa;
+var descuento; 
+    if (cantidadCamisas >=3) {
+        descuento = TotalSinDescuento * 0.2;
+    } else {
+        descuento = TotalSinDescuento * 0.1;
+    }
+    var TotalConDescuento = TotalSinDescuento - descuento;
+        alert("El total a pagar por la compra de camisas es: " + TotalConDescuento.toFixed(2) + "pesos.");
+
+
 /*EJERCICIO 11: Leer 2 números, si son iguales que los multiplique, si el primero es mayor que el segundo que lo reste y si no que los sume*/
+
+var num1 = parseFloat(prompt("Escriba el primer número:"));
+var num2 = parseFloat(prompt("Escriba el segundo número:"));
+    if (num1 === num2) {
+        var resultado = num1 * num2;
+            alert("El resultado de la multiplicación es: " + resultado);
+    } else if (num1 > num2) {
+        var resultado = num1 - num2;
+            alert("El resultado de la resta es: " + resultado);
+    } else {
+        var resultado = num1 + num2;
+            alert("El resultado de la suma es: " + resultado);
+    }
+
 /*EJERCICIO 12: Realizar una calculadora con las operaciones básicas*/
+
+let opcion=prompt("1.suma 2.resta 3.división 4.multiplicación");
+let num1=prompt("Digite el primer número");
+let num2=prompt("Digite el segundo número");
+
+    if(opcion==1){
+        suma=parseInt(num1) + parseInt(num2);
+            alert("La suma es: "+suma);
+    }else if(opcion==2){
+        resta=parseInt(num1) - parseInt(num2);
+            alert("La resta es: "+resta);
+    }else if(opcion==3){
+        división=parseInt(num1) / parseInt(num2);
+            alert("La división es: "+división);
+    }else {
+        multiplicación=parseInt(num1) * parseInt(num2);
+            alert("La multiplicación es: "+multiplicación);
+    }
+
 
